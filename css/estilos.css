@@ -1,0 +1,237 @@
+:root {
+    --color: #c46fd1;
+    --newsletter: #3024ae;
+}
+
+.row {
+    width: 100%;
+}
+
+/* COLOR DE FONDO */
+
+.beneficios, .categorias, .oferta, .footer {
+    background-color: #fdf2ff;
+}
+
+/* CAROUSEL Y NAV */
+
+.navbar form > input:focus {
+    box-shadow: none;
+    border: 1px solid #fff;
+}
+
+.navbar .iconos-navbar a{
+    border: 1px solid #fff;
+    font-size: .8rem;
+    padding: .5rem;
+    line-height: .5rem;
+    border-radius: 50%;
+}
+
+.hero {
+    background-image: linear-gradient(237deg, #210fa5, #c112ec 70%);
+}
+
+.carousel-caption {
+    left: 50%;
+    bottom: 40%;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+
+.btn-compra {
+    background-color: #ffbb00;
+    color: #fff;
+}
+
+.btn-compra:hover {
+    background-color: #f3b60e;
+}
+
+/* BENEFICIOS */
+
+.beneficios span {
+    color: var(--color);
+}
+
+/* CATEGORÍAS */
+
+.galeria-imagen {
+    position: relative;
+    transition: transform 100ms ease-in-out;
+}
+
+.galeria-imagen:hover, .mas-vendido:hover {
+    transform: scale(1.010);
+}
+
+.galeria-imagen .descripcion {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.descripcion a {
+    border: var(--color) 1px solid;
+    background-color: transparent;
+    color: var(--color);
+    transition: all 200ms ease-in-out;
+}
+
+.descripcion a:hover {
+    color: #fff;
+    background-color: var(--color);
+}
+
+/* MÁS VENDIDOS */
+
+.mas-vendido {
+    transition: transform 100ms ease-in-out;
+}
+
+.mejores-productos .carrito {
+    border: var(--color) 1px solid;
+    color: var(--color);
+    padding: .5rem;
+    line-height: .5rem;
+    border-radius: 50%;
+    transition: all 100ms ease-in-out;
+}
+
+.mejores-productos .carrito:hover {
+    color: #fff;
+    background-color: var(--color);
+}
+
+/* OFERTA */
+
+.oferta .crono p > span {
+    display: block;
+    text-align: center;
+}
+
+.oferta .crono p .texto-crono {
+    font-size: .8rem;
+    line-height: 1;
+}
+
+.oferta .producto {
+    position: relative;
+}
+
+.oferta .descuento {
+    position: absolute;
+}
+
+.producto .descuento {
+    left: 55%;
+    top: 15%;
+    padding: .6rem;
+    border-radius: 50%;
+    line-height: 2.2rem;
+    background-color: var(--color);
+    color: #fff;
+}
+
+.oferta-descripcion .btn-oferta {
+    background-color: var(--color);
+    color: #fff;
+    transition: all 100ms ease-in-out;
+}
+
+.oferta-descripcion .btn-oferta:hover {
+    background-color: #b63bc9;
+    color: #fff;
+}
+
+.oferta-descripcion .precio span {
+    letter-spacing: -2px;
+}
+
+.oferta-descripcion .precio .antes {
+    margin-left: 1rem;
+    color: var(--color);
+}
+
+/* FORMULARIO */
+
+.formulario input {
+    transition: box-shadow 100ms ease-in-out;
+}
+
+.formulario input:focus, .formulario select:focus {
+    border: 1px solid var(--color);
+    box-shadow: 1px 1px 9px 1px var(--color);
+}
+
+.formulario select option:hover {
+    background-color: var(--color);
+}
+
+.formulario input:checked {
+    background-color: var(--color);
+    border: none;
+}
+
+.formulario .btn-registro {
+    background-color: var(--color);
+    color: #fff;
+    transition: all 100ms ease-in-out;
+}
+
+.formulario .btn-registro:hover {
+    background-color: #b63bc9;
+    color: #fff;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+    background-color: var(--newsletter);
+}
+
+/* FOOTER */
+
+.footer div h4 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.footer div > ul {
+    list-style: none;
+}
+
+
+.footer div > ul li {
+    margin-left: -1.8rem;
+}
+
+.footer div > ul li a {
+    font-size: .8rem;
+    text-decoration: none;
+    color: #a1a1a1;
+}
+
+.footer .sociales {
+    border-top: 1px solid var(--color);
+}
+
+.footer .sociales a{
+    color: var(--color);
+}
+
+@media screen and (max-width: 992px){
+ 
+    .carousel-caption {
+        left: 0%;
+        top: 0;
+    }
+    
+    .carousel-control-prev, .carousel-control-next {
+        width: 15%;
+        bottom: -50%;
+    }
+
+}
